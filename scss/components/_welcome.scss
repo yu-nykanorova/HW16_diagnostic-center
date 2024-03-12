@@ -1,0 +1,13 @@
+.welcome {
+	margin-top: 54rem;
+	margin-bottom: 111rem;
+
+	@include tablet-small {
+		margin-top: 30rem;
+		margin-bottom: 70rem;
+	}
+
+	@include mobile {
+		margin-top: 20rem;
+	}
+}

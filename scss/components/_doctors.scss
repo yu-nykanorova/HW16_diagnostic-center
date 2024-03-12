@@ -1,0 +1,76 @@
+.doctors {
+    text-align: center;
+    margin-bottom: 130rem;
+
+    @include tablet-small {
+        margin-bottom: 80rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 48rem;
+        color: #262626;
+        margin-bottom: 70rem;
+        @include tablet-small {
+            margin-bottom: 50rem;
+        }
+    }
+
+    &__desc {
+        max-width: 837rem;
+        margin-inline: auto;
+        margin-bottom: 123rem;
+        @include tablet-small {
+            margin-bottom: 70rem;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(360rem, 1fr));
+        gap: 24rem;
+    }
+    &__card {
+        text-align: left;
+        padding: 44rem 34rem 33rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        background: var(--c-lavender-light);
+        border-radius: 20rem;
+        transition: var(--transition);
+
+        &:hover {
+            box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2);
+        }
+    }
+    &__person {
+        display: flex;
+        align-items: center;
+        gap: 13rem;
+        margin-bottom: 25rem;
+    }
+   
+    &__person-name {
+        margin-bottom: 3rem;
+    }
+    &__person-job {
+        color: var(--c-grey);
+    }
+
+    &__btn {
+        align-self: center;
+        margin-top: 28rem;
+        background: var(--c-lavender);
+        padding: 10rem 49rem;
+        font-weight: 600;
+        font-size: 20rem;
+        color: var(--c-lavender-light);
+        transition: var(--transition);
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}

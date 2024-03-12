@@ -1,0 +1,31 @@
+html {
+	font-size: 1px;
+}
+
+body {
+	font-family: var(--ff);
+	font-size: 16rem;
+	transition: var(--transition);
+}
+
+.container {
+	max-width: 1170rem;
+	padding: 0 20rem;
+	margin-inline: auto;
+}
+
+.btn {
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	font-family: var(--ff);
+	border-radius: 50rem;
+}
+
+.desc {
+	font-family: var(--ff);
+	font-weight: 400;
+	font-size: 16rem;
+	color: var(--c-grey-dark);
+}
