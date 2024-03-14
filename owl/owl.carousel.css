@@ -50,6 +50,8 @@
 	min-height: 1px;
 	float: left;
 	border-radius: 30px;
+	padding-left: 5px;
+	padding-right: 5px;
 	-webkit-backface-visibility: hidden;
 	-webkit-tap-highlight-color: transparent;
 	-webkit-touch-callout: none;
@@ -57,6 +59,7 @@
 .owl-carousel .owl-item img {
 	display: block;
 	width: 100%;
+	object-fit: cover;
 	border-radius: 30px;
 }
 .owl-carousel .owl-nav.disabled,
@@ -69,7 +72,7 @@
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
-	bottom: 30px;
+	bottom: 5%;
 }
 .owl-carousel .owl-nav .owl-prev,
 .owl-carousel .owl-nav .owl-next,

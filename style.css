@@ -174,8 +174,25 @@ body {
   border-radius: 50rem;
 }
 
+.title-big {
+  font-weight: 700;
+  font-size: 48rem;
+  color: var(--c-grey-dark);
+}
+
+.title-medium {
+  font-weight: 600;
+  font-size: 24rem;
+  color: var(--c-grey-dark);
+}
+
+.title-small {
+  font-weight: 600;
+  font-size: 20rem;
+  color: var(--c-grey-dark);
+}
+
 .desc {
-  font-family: var(--ff);
   font-weight: 400;
   font-size: 16rem;
   color: var(--c-grey-dark);
@@ -296,9 +313,6 @@ body {
   }
 }
 .header__logo {
-  font-weight: 600;
-  font-size: 24rem;
-  color: var(--c-grey-dark);
   -webkit-transition: var(--transition);
   transition: var(--transition);
 }
@@ -320,8 +334,8 @@ body {
   .header__ul {
     position: fixed;
     z-index: 2;
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -496,6 +510,7 @@ body {
 @media (max-width: 576px) {
   .welcome {
     margin-top: 20rem;
+    margin-bottom: 40rem;
   }
 }
 
@@ -509,14 +524,16 @@ body {
   }
 }
 .service__title {
-  font-weight: 700;
-  font-size: 48rem;
-  color: #262626;
   margin-bottom: 70rem;
 }
 @media (max-width: 768px) {
   .service__title {
     margin-bottom: 40rem;
+  }
+}
+@media (max-width: 576px) {
+  .service__title {
+    font-size: 36rem;
   }
 }
 .service__desc {
@@ -527,6 +544,11 @@ body {
 @media (max-width: 768px) {
   .service__desc {
     margin-bottom: 80rem;
+  }
+}
+@media (max-width: 576px) {
+  .service__desc {
+    margin-bottom: 60rem;
   }
 }
 .service__list {
@@ -555,17 +577,21 @@ body {
   transition: var(--transition);
 }
 .service__item:hover {
+  background: var(--c-lavender);
   -webkit-box-shadow: 0 0 10rem 0 rgba(38, 38, 38, 0.2);
           box-shadow: 0 0 10rem 0 rgba(38, 38, 38, 0.2);
+}
+.service__item:hover svg path {
+  fill: var(--c-white);
+}
+.service__item:hover .service__item-title, .service__item:hover .service__item-desc, .service__item:hover .service__item-forward {
+  color: var(--c-white);
 }
 .service__item-icon {
   margin-bottom: 27rem;
 }
 .service__item-title {
   margin-bottom: 17rem;
-  font-weight: 600;
-  font-size: 24rem;
-  color: #262626;
 }
 .service__item-desc {
   margin-bottom: 17rem;
@@ -594,20 +620,6 @@ body {
           transform: scale(1.1);
 }
 
-.brand-color {
-  background: var(--c-lavender);
-  font-weight: 400;
-  font-size: 16rem;
-  color: var(--c-white);
-}
-.brand-color .service__item-forward, .brand-color .service__item-title {
-  color: var(--c-white);
-}
-.brand-color:hover {
-  -webkit-box-shadow: 0 0 10rem 0 var(--c-grey-dark);
-          box-shadow: 0 0 10rem 0 var(--c-grey-dark);
-}
-
 .doctors {
   text-align: center;
   margin-bottom: 130rem;
@@ -618,14 +630,16 @@ body {
   }
 }
 .doctors__title {
-  font-weight: 700;
-  font-size: 48rem;
-  color: #262626;
   margin-bottom: 70rem;
 }
 @media (max-width: 768px) {
   .doctors__title {
     margin-bottom: 50rem;
+  }
+}
+@media (max-width: 576px) {
+  .doctors__title {
+    font-size: 36rem;
   }
 }
 .doctors__desc {
@@ -636,6 +650,11 @@ body {
 @media (max-width: 768px) {
   .doctors__desc {
     margin-bottom: 70rem;
+  }
+}
+@media (max-width: 576px) {
+  .doctors__desc {
+    margin-bottom: 60rem;
   }
 }
 .doctors__list {
@@ -663,6 +682,11 @@ body {
   border-radius: 20rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+}
+@media (max-width: 576px) {
+  .doctors__card {
+    padding: 35rem 25rem;
+  }
 }
 .doctors__card:hover {
   -webkit-box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2);
@@ -830,9 +854,6 @@ body {
 }
 .footer__title {
   display: inline-block;
-  font-weight: 600;
-  font-size: 24rem;
-  color: var(--c-grey-dark);
   margin-bottom: 26rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
@@ -855,9 +876,6 @@ body {
 }
 .footer__contacts h3 {
   margin-bottom: 9rem;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--c-grey-dark);
 }
 @media (max-width: 992px) {
   .footer__contacts {
@@ -872,9 +890,6 @@ body {
 }
 .footer__schedule h3 {
   margin-bottom: 17rem;
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--c-grey-dark);
 }
 @media (max-width: 992px) {
   .footer__schedule {

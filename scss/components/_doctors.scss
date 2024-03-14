@@ -7,12 +7,14 @@
     }
 
     &__title {
-        font-weight: 700;
-        font-size: 48rem;
-        color: #262626;
         margin-bottom: 70rem;
+
         @include tablet-small {
             margin-bottom: 50rem;
+        }
+
+        @include mobile {
+            font-size: 36rem;
         }
     }
 
@@ -20,8 +22,13 @@
         max-width: 837rem;
         margin-inline: auto;
         margin-bottom: 123rem;
+
         @include tablet-small {
             margin-bottom: 70rem;
+        }
+
+        @include mobile {
+            margin-bottom: 60rem;
         }
     }
 
@@ -40,6 +47,10 @@
         background: var(--c-lavender-light);
         border-radius: 20rem;
         transition: var(--transition);
+
+        @include mobile {
+            padding: 35rem 25rem;
+        }
 
         &:hover {
             box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2);
