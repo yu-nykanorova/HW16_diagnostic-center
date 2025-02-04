@@ -5,6 +5,9 @@
     @include tablet-small {
         margin-top: 80rem;
     }
+    @include mobile {
+        margin-top: 60rem;
+    }
 
     &__container {
         padding: 106rem 20rem 81rem 20rem;
@@ -13,11 +16,14 @@
         align-items: flex-start;
                 
         @include tablet {
-            padding: 70rem 20rem 70rem 20rem;
+            padding: 70rem 20rem;
             flex-wrap: wrap;
             justify-content: center;
             gap: 40rem;
             text-align: center;
+        }
+        @include tablet-small {
+            padding: 55rem 20rem;
         }
     }
 
@@ -50,6 +56,14 @@
             margin-bottom: 9rem;
         }
 
+        a {
+            transition: var(--transition);
+
+            &:hover {
+                color: var(--c-lavender);
+            }
+        }
+
         @include tablet {
             max-width: 300rem;
             text-align: left;
@@ -58,6 +72,10 @@
         @include mobile {
             text-align: center;
         }
+    }
+
+    &__phone a:first-of-type {
+        margin-right: 16rem;
     }
 
     &__schedule {
@@ -69,18 +87,17 @@
             max-width: 300rem;
             text-align: left;
         }
-
         @include mobile {
             text-align: center;
         }
-     }
 
-	&__schedule-hours {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 15rem;
-     }
+        &-hours {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 15rem;
+        }
+    }
 }
 
 

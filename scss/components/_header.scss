@@ -21,25 +21,31 @@
 	}
 
 	&__ul {
+		margin-right: 5rem;
 		display: flex;
 		align-items: center;
 		gap: 24rem;
+		width: 421rem;
 
 		@include tablet {
 			position: fixed;
 			z-index: 2;
 			width: 100%;
 			height: 50%;
-			flex-direction: column;
+			margin-right: initial;
 			left: 0;
 			top: 0;
 			background: var(--c-grey-dark);
 			opacity: 0.9;
-			align-items: center;
 			justify-content: center;
-			gap: 30rem;
 			transform: translateY(-110%);
 			transition: var(--transition);
+		}
+
+		@include tablet-small {
+			height: 100%;
+			gap: 30rem;
+			flex-direction: column;
 		}
 
 		&._active {
@@ -51,6 +57,15 @@
 			top: 20rem;
 			right: 20rem;
 			color: var(--c-white);
+		}
+	}
+
+	&__li {
+		text-align: center;
+		flex: 0 0 calc((100% - 24rem * 4) / 5);
+
+		@include tablet {
+			flex: initial;
 		}
 	}
 

@@ -47,6 +47,11 @@
         padding: 46rem 26rem;
         border-radius: 15rem;
         transition: var(--transition);
+
+        @include tablet-small {
+            padding: 30rem 20rem;
+        }
+
         &:hover  {
             background: var(--c-lavender);
             box-shadow: 0 0 10rem 0 rgba(38, 38, 38, 0.2);
@@ -63,6 +68,13 @@
 
     &__item-icon {
         margin-bottom: 27rem;
+
+        svg {
+            @include tablet-small {
+                width: 80rem;
+                height: 60rem;
+            }
+        }
     }
 
     &__item-title {

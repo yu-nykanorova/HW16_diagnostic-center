@@ -11,18 +11,28 @@
 		font-size: 36rem;
 		color: #fff;
 		margin-bottom: 47rem;
+
+		@include tablet-small {
+			font-size: 30rem;
+		}
+		@include mobile {
+			font-size: 26rem;
+		}
 	}
 }
 
 .join-form {
 	border-radius: 50rem;
 	background: #f9f1fe;
-	padding: 10rem 31rem;
-	padding-right: 14rem;
+	padding: 10rem 14rem 10rem 31rem;
 	gap: 10px;
 	display: flex;
 	max-width: 717px;
 	margin-inline: auto;
+
+	@include tablet-small {
+		padding: 8rem 8rem 8rem 20rem;
+	}
 
 	&__input {
 		width: 100%;
@@ -40,9 +50,9 @@
 	}
 
 	&__btn {
-		display: inline-flex;
+		display: flex;
 		align-items: center;
-		background: #8842f0;
+		background: var(--c-lavender);
 		padding: 10px 25px;
 		font-family: var(--ff);
 		font-weight: 600;
@@ -55,7 +65,7 @@
         }
 
 		@include mobile {
-			padding: 10px;
+			padding: 6rem;
 		}
 
 		&-text {
