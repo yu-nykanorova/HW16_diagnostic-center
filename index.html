@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -24,9 +25,9 @@
 				<li class="header__li"><a class="desc header__a" href="#doctors">Doctors</a></li>
 				<li class="header__li"><a class="desc header__a" href="#gallery">Gallery</a></li>
 				<li class="header__li"><a class="desc header__a" href="#contact">Contact</a></li>
-				<span class="material-icons icon-close" onclick="navToggle()">close</span>
+				<span class="material-icons icon-close" id="closeButton">close</span>
 			</ul>
-			<span class="material-icons icon-menu" onclick="navToggle()">menu</span>
+			<span class="material-icons icon-menu" id="burgerButton">menu</span>
 		</div>
 		<form class="header-form">
 			<input class="header-form__input" type="search" placeholder="Search Here" />
