@@ -55,10 +55,6 @@
         @include mobile {
             padding: 35rem 25rem;
         }
-
-        &:hover {
-            box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2);
-        }
     }
     &__person {
         display: flex;
@@ -90,7 +86,9 @@
         }
 
         &:hover {
-            transform: scale(1.02);
+            background: var(--c-lavender-light);
+            color: var(--c-lavender);
+            outline: 3rem solid var(--c-lavender);
         }
     }
 }

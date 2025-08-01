@@ -123,7 +123,28 @@
 	border-radius: 50rem;
 	max-width: 280rem;
 	padding: 9rem 15rem;
-	
+
+	&.filled {
+		background: var(--c-white);
+		border: 1rem solid var(--c-black);
+
+		.header-form__input {
+			color: var(--c-black);
+
+			&::placeholder {
+				color: var(--c-black);
+			}
+		}
+
+		.header-form__btn {
+			color: var(--c-black);
+
+			&:hover {
+				color: var(--c-lavender);
+			}
+		}
+	}
+
 	@include tablet-small {
 		max-width: 200rem;
 	}
@@ -144,7 +165,7 @@
 		&::placeholder {
 			color: var(--c-white);
 			font-weight: 400;
-			font-size: 14rem;
+			font-size: 14rem;		
 			
 			@include tablet-small {
 				font-size: 12rem;

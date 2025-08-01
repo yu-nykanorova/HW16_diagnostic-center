@@ -46,3 +46,7 @@ body {
 	font-size: 16rem;
 	color: var(--c-grey-dark);
 }
+
+.no-scroll {
+	overflow: hidden;
+}

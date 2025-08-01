@@ -57,11 +57,13 @@
 		font-family: var(--ff);
 		font-weight: 600;
 		font-size: 20rem;
-		color: #fff;
+		color: var(--c-white);
 		transition: var(--transition);
 
 		&:hover {
-            transform: scale(1.02);
+            background: var(--c-lavender-light);
+			color: var(--c-black);
+			outline: 2rem solid var(--c-black);
         }
 
 		@include mobile {

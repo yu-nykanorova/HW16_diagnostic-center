@@ -164,6 +164,9 @@ body {
   font-size: 16rem;
   color: var(--c-grey-dark); }
 
+.no-scroll {
+  overflow: hidden; }
+
 *::-webkit-scrollbar {
   width: 10px;
   height: 10px;
@@ -360,6 +363,23 @@ body {
   border-radius: 50rem;
   max-width: 280rem;
   padding: 9rem 15rem; }
+  .header-form.filled {
+    background: var(--c-white);
+    border: 1rem solid var(--c-black); }
+    .header-form.filled .header-form__input {
+      color: var(--c-black); }
+      .header-form.filled .header-form__input::-webkit-input-placeholder {
+        color: var(--c-black); }
+      .header-form.filled .header-form__input:-ms-input-placeholder {
+        color: var(--c-black); }
+      .header-form.filled .header-form__input::-ms-input-placeholder {
+        color: var(--c-black); }
+      .header-form.filled .header-form__input::placeholder {
+        color: var(--c-black); }
+    .header-form.filled .header-form__btn {
+      color: var(--c-black); }
+      .header-form.filled .header-form__btn:hover {
+        color: var(--c-lavender); }
   @media (max-width: 768px) {
     .header-form {
       max-width: 200rem; } }
@@ -573,9 +593,6 @@ body {
     @media (max-width: 576px) {
       .doctors__card {
         padding: 35rem 25rem; } }
-    .doctors__card:hover {
-      -webkit-box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2);
-              box-shadow: 0 0 10rem rgba(38, 38, 38, 0.2); }
   .doctors__person {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -605,8 +622,9 @@ body {
         font-size: 18rem;
         font-weight: 500; } }
     .doctors__btn:hover {
-      -webkit-transform: scale(1.02);
-              transform: scale(1.02); }
+      background: var(--c-lavender-light);
+      color: var(--c-lavender);
+      outline: 3rem solid var(--c-lavender); }
 
 .join {
   border-radius: 10rem;
@@ -667,12 +685,13 @@ body {
     font-family: var(--ff);
     font-weight: 600;
     font-size: 20rem;
-    color: #fff;
+    color: var(--c-white);
     -webkit-transition: var(--transition);
     transition: var(--transition); }
     .join-form__btn:hover {
-      -webkit-transform: scale(1.02);
-              transform: scale(1.02); }
+      background: var(--c-lavender-light);
+      color: var(--c-black);
+      outline: 2rem solid var(--c-black); }
     @media (max-width: 576px) {
       .join-form__btn {
         padding: 6rem; } }
@@ -779,3 +798,5 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     gap: 15rem; }
+
+/*# sourceMappingURL=style.css.map */
